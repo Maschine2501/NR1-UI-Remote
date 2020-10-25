@@ -3,7 +3,7 @@
 
 # NR1-UI-Remote:
 This Code is a Remote-Control for Volumio (and NR1-UI).
-It is functional without NR1-UI, you justt need to enable the [Album-Cover Tool](https://github.com/Maschine2501/Album-Art-Tool/tree/main) (link will follow soon.
+It is functional without NR1-UI, you justt need to enable the [Album-Cover Tool](https://github.com/Maschine2501/Album-Art-Tool/tree/main).
 If you use NR1-UI -> Album-Cover tool is implemented in Setup, you only need to activate it.
 
 This is based on latest [Raspberry Pi OS (32-bit) Lite](https://downloads.raspberrypi.org/raspios_lite_armhf_latest)
@@ -34,11 +34,10 @@ Time by time more informations in the [wiki](https://github.com/Maschine2501/NR1
 
 ---
 
-## [Basic Installation Steps <-> First Installation]() will follow soon....
-
+# [Basic Installation Steps <-> First Installation](https://github.com/Maschine2501/NR1-UI-Remote/wiki/Basic-Installation)
 ---
 
-# [Main-Installation]() will follow soon....
+# [Main-Installation](https://github.com/Maschine2501/NR1-UI-Remote/wiki/Main-Installation) 
 ---
 
 ### [wiring / button-layout]() will follow soon....
