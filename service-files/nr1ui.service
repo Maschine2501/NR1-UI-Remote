@@ -1,0 +1,15 @@
+[Unit]
+Description=NR1-UI
+ 
+[Service]
+Type=simple
+WorkingDirectory=/home/pi
+ExecStart=/home/pi/src/Python-3.8.5/bin/python3.8 -u /home/pi/NR1-UI-Remote/nr1ui.py
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=nr1ui
+User=pi
+Group=pi
+ 
+[Install]
+WantedBy=multi-user.target
