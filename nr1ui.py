@@ -104,7 +104,7 @@ VOLUME_DT = 5
 b_obj = BytesIO() 
 crl = pycurl.Curl() 
 
-ftp = FTP('192.168.178.66')
+ftp = FTP('volumio.local')
 ftpUsername = 'volumio'
 ftpPassword = 'volumio'
 ftp.login('volumio', 'volumio') #(user='volumio', passwd='volumio')
