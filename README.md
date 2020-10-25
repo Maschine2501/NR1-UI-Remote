@@ -40,7 +40,9 @@ Time by time more informations in the [wiki](https://github.com/Maschine2501/NR1
 # [Main-Installation](https://github.com/Maschine2501/NR1-UI-Remote/wiki/Main-Installation) 
 ---
 
-### [wiring / button-layout]() will follow soon....
+### ![wiring / button-layout](https://github.com/Maschine2501/NR1-UI-Remote/blob/main/Zero%20Remote.jpg) will follow soon....
+
+
 ---
 
 ### [hardware]() will follow soon....
