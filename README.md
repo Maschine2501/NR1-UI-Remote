@@ -1,62 +1,29 @@
-Inspired by: [diehardsk/Volumio-OledUI](https://github.com/diehardsk/Volumio-OledUI)
-
-### This is the Python3.8.5 version of [Maschine2501/Volumio-OledUI](https://github.com/Maschine2501/Volumio-OledUI/)
+### This is the Remote version of [Maschine2501/NR1-UI](https://github.com/Maschine2501/NR1-UI/)
 ---
 
-# NR1-UI
-Im building a Network Hifi Receiver from scratch.
-Main components are a RaspberryPi4 and an HiFi-Berry-Dac.
-An old Braun T2 Tuner serves as case for the player.
-To keep as much as possible from the look of the device i needed an Interface for Volumio.
-And especialy one that supports a 3,2" ssd1322 SPI Oled with 256x64Pixel.
-After doing some research i found diehrdsk/Volumio-OledUI.
-It fullfills many points on my "wishlist" but not nearly all.
-As we all know, the way is the destination, i spent some time (much time....) in modifying the original code.
-Unfortuneatly luma.oled does not support Python2 anymore.
-So this ist the new version, now depending on python 3.5.2
+# NR1-UI-Remote:
+This Code is a Remote-Control for Volumio (and NR1-UI).
+It is functional without NR1-UI, you justt need to enable the [Album-Cover Tool]() (link will follow soon.
+If you use NR1-UI -> Album-Cover tool is implemented in Setup, you only need to activate it.
 
-The project is not finished yet... but close the the goal!
+This is based on latest [Raspberry Pi OS (32-bit) Lite](https://downloads.raspberrypi.org/raspios_lite_armhf_latest)
+
+In my case, I use a raspberry Pi Zero with an ssd1351 oled and a Li-On Shield (18650)
+
+The project is not finished yet... !
 
 I try to assist you, if you got questions or even problems with the code, just contact me.
 
-Time by time more informations in the [wiki](https://github.com/Maschine2501/NR1-UI/wiki) will follow...
+Time by time more informations in the [wiki](https://github.com/Maschine2501/NR1-UI-Remote/wiki) will follow...
 
 ## The Code is now modular:
 
-### To modify your Layout use the [config files](https://github.com/Maschine2501/NR1-UI/tree/master/config) -> [here](https://github.com/Maschine2501/NR1-UI/wiki/Styling-Modification-Basics) is a little instruction about it.
+### To modify your Layout use the [config files](https://github.com/Maschine2501/NR1-UI-Remote/ConfigurationFiles) -> [here](https://github.com/Maschine2501/NR1-UI/wiki/Styling-Modification-Basics) is a little instruction about it.
 
-### To select your display, just change [line 68](https://github.com/Maschine2501/NR1-UI/blob/7be15f426592573882ba3fdfc91f5898ab6e5aa4/nr1ui.py#L68) in nr1ui.py
 
-### To change the look/layout just press Button-C in "Standby-Screen" (Clock), select the desired Layout with the Rotary-Rotation and push the Rotary once to apply selection -> 
-![Screenselect](https://github.com/Maschine2501/NR1-UI/blob/master/wiki/screenshots/ssd1322Screenselect.png)
+#### Screenshots will follow soon...
 
-#### Base ssd1322 (on all Layouts the same):
-![](https://github.com/Maschine2501/NR1-UI/blob/master/wiki/screenshots/ssd1322%20(1).png) ![](https://github.com/Maschine2501/NR1-UI/blob/master/wiki/screenshots/ssd1322%20(2).png) ![](https://github.com/Maschine2501/NR1-UI/blob/master/wiki/screenshots/ssd1322%20(3).png)
-#### Spectrum-Left (ssd1322):
-![](https://github.com/Maschine2501/NR1-UI/blob/master/wiki/screenshots/ssd1322Screen1%20(1).png) ![](https://github.com/Maschine2501/NR1-UI/blob/master/wiki/screenshots/ssd1322Screen1%20(2).png)
-#### Spectrum-Center (ssd1322):
-![](https://github.com/Maschine2501/NR1-UI/blob/master/wiki/screenshots/ssd1322Screen2%20(1).png) ![](https://github.com/Maschine2501/NR1-UI/blob/master/wiki/screenshots/ssd1322Screen2%20(2).png)
-#### Spectrum-Right (ssd1322):
-![](https://github.com/Maschine2501/NR1-UI/blob/master/wiki/screenshots/ssd1322Screen3%20(1).png) ![](https://github.com/Maschine2501/NR1-UI/blob/master/wiki/screenshots/ssd1322Screen3%20(2).png)
-#### No-Spectrum (ssd1322):
-![](https://github.com/Maschine2501/NR1-UI/blob/master/wiki/screenshots/ssd1322Screen4%20(1).png) ![](https://github.com/Maschine2501/NR1-UI/blob/master/wiki/screenshots/ssd1322Screen4%20(2).png)
-#### Modern (ssd1322):
-![](https://github.com/Maschine2501/NR1-UI/blob/master/wiki/screenshots/ssd1322Screen5%20(1).png) ![](https://github.com/Maschine2501/NR1-UI/blob/master/wiki/screenshots/ssd1322Screen5%20(2).png)
-#### VU-Meter-1 (ssd1322):
-![](https://github.com/Maschine2501/NR1-UI/blob/master/wiki/screenshots/ssd1322Screen6%20(1).png) ![](https://github.com/Maschine2501/NR1-UI/blob/master/wiki/screenshots/ssd1322Screen6%20(2).png)
-#### VU-Meter-2 (ssd1322):
-![](https://github.com/Maschine2501/NR1-UI/blob/master/wiki/screenshots/ssd1322Screen7%20(1).png) ![](https://github.com/Maschine2501/NR1-UI/blob/master/wiki/screenshots/ssd1322Screen7%20(2).png)
-#### VU-Meter-Bar (ssd1322):
-![](https://github.com/Maschine2501/NR1-UI/blob/master/wiki/screenshots/ssd1322Screen8%20(1).png) ![](https://github.com/Maschine2501/NR1-UI/blob/master/wiki/screenshots/ssd1322Screen8%20(2).png)
-
-#### Base ssd1306 (on all Layouts the same):
-![](https://github.com/Maschine2501/NR1-UI/blob/master/wiki/screenshots/ssd1306%20(1).png) ![](https://github.com/Maschine2501/NR1-UI/blob/master/wiki/screenshots/ssd1306%20(2).png) ![](https://github.com/Maschine2501/NR1-UI/blob/master/wiki/screenshots/ssd1306%20(3).png)
-#### Spectrum-Screen (ssd1306):
-![](https://github.com/Maschine2501/NR1-UI/blob/master/wiki/screenshots/ssd1306Screen1%20(1).png) ![](https://github.com/Maschine2501/NR1-UI/blob/master/wiki/screenshots/ssd1306Screen1%20(2).png)
-#### Progress-Bar (ssd1306):
-![](https://github.com/Maschine2501/NR1-UI/blob/master/wiki/screenshots/ssd1306Screen2%20(1).png) ![](https://github.com/Maschine2501/NR1-UI/blob/master/wiki/screenshots/ssd1306Screen2%20(2).png)
-
-## [Features](https://github.com/Maschine2501/NR1-UI/wiki/Features)
+## [Features]() will follow soon...
 
 ## To-Do: 
 ---
@@ -72,28 +39,24 @@ Time by time more informations in the [wiki](https://github.com/Maschine2501/NR1
 ## [Allready Done](https://github.com/Maschine2501/NR1-UI/wiki/Allready-Done)
 
 
-## [Project on Volumio-Forum](https://community.volumio.org/t/oled-user-inteface-for-volumio-with-rotary-and-4-buttons-modular-highly-configurable-supports-ssd1306-and-ssd1322/40378?u=maschine2501)
+## [Project on Volumio-Forum]() will follow soon....
 
 ---
 
-## [Basic Installation Steps <-> First Installation](https://github.com/Maschine2501/NR1-UI/wiki/Basic-Installation-Steps-----First-Installation)
+## [Basic Installation Steps <-> First Installation]() will follow soon....
 
 ---
 
-# [Main-Installation steps (Python 3.8.5) (Bash-Script)](https://github.com/Maschine2501/NR1-UI/wiki/Installation-Steps-(for-Python3.8.5-Version---Autoconfig-Bash-Script))
+# [Main-Installation]() will follow soon....
 ---
 
-## Configuration Manual (will follow soon!)
+### [wiring / button-layout]() will follow soon....
 ---
 
-
-### [wiring / button-layout / truthtable](https://github.com/Maschine2501/NR1-UI/wiki/wiring-and-button-truth-table)
+### [hardware]() will follow soon....
 ---
 
-### [hardware](https://github.com/Maschine2501/NR1-UI/wiki/hardware)
----
-
-### [dependencies](https://github.com/Maschine2501/NR1-UI/wiki/dependencies)
+### [dependencies]() will follow soon....
 ---
 
 ### [font-info and source](https://github.com/Maschine2501/NR1-UI/wiki/font-information-(source))
