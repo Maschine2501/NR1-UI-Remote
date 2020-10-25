@@ -7,8 +7,8 @@ sudo apt-get install -y build-essential libffi-dev libc6-dev libbz2-dev libexpat
 cd #
 sudo chmod +x /home/pi/NR1-UI-Remote/PreConfiguration.sh #
 #sudo cp /home/pi/NR1-UI-Remote/ConfigurationFiles/config.txt /boot/ #
-echo "dtparam=spi=on" >> /boot/userconfig.txt #
-echo "dtparam=i2c=on" >> /boot/userconfig.txt #
+#echo "dtparam=spi=on" >> /boot/userconfig.txt #
+#echo "dtparam=i2c=on" >> /boot/userconfig.txt #
 echo "Installing OpenSSL 1.1.1b" #
 mkdir /home/pi/src #
 cd /home/pi/src && mkdir openssl && cd openssl #
